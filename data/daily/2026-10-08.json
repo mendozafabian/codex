@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-08",
+  "product": "AI Radar",
+  "signals": [
+    {
+      "id": "google-gemini-enterprise-agent",
+      "title": "Google presenta un agente Gemini para empresas",
+      "source": {
+        "name": "Google Cloud",
+        "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-at-work/",
+        "published_at": "2026-10-08"
+      },
+      "evidence": "Google anunció un agente que puede recibir objetivos, conectarse a herramientas empresariales y dejar un registro de sus acciones.",
+      "impact": "Podría llevar los agentes de IA de pruebas aisladas a flujos de trabajo corporativos. Su adopción y fiabilidad en uso real todavía deben comprobarse.",
+      "action": "Revisar sus integraciones y controles de auditoría; probarlo con una tarea interna de bajo riesgo cuando esté disponible.",
+      "status": "announced"
+    },
+    {
+      "id": "anthropic-critical-infrastructure-defense",
+      "title": "Anthropic lanza un programa de ciberseguridad para infraestructura crítica",
+      "source": {
+        "name": "Anthropic",
+        "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+        "published_at": "2026-10-08"
+      },
+      "evidence": "Anthropic anunció que ofrecerá modelos, ingenieros y análisis de amenazas a defensores de infraestructura crítica, además de un escáner gratuito de vulnerabilidades para proyectos de código abierto.",
+      "impact": "Puede ayudar a detectar fallos en sistemas esenciales y dependencias de software; las correcciones deben desplegarse sin interrumpir servicios críticos.",
+      "action": "Revisar el escáner para proyectos propios y seguir cómo se validan y despliegan las correcciones.",
+      "status": "launched"
+    },
+    {
+      "id": "mistral-large-4-open-weights",
+      "title": "Mistral presenta su modelo Large 4 de pesos abiertos",
+      "source": {
+        "name": "Le Monde",
+        "url": "https://www.lemonde.fr/en/economy/article/2026/10/06/mistral-ai-unveils-new-ai-model-aimed-at-narrowing-the-gap-with-top-chinese-competitors_6758318_19.html",
+        "published_at": "2026-10-06"
+      },
+      "evidence": "Mistral presentó Large 4 como su nuevo modelo insignia y afirmó que compite con los mejores modelos abiertos. La evaluación independiente de esas afirmaciones está pendiente.",
+      "impact": "Si su rendimiento es competitivo, podría ampliar las alternativas para organizaciones que necesitan controlar dónde ejecutan sus modelos.",
+      "action": "Esperar evaluaciones independientes y comparar rendimiento, coste y requisitos de infraestructura antes de migrar.",
+      "status": "verification_pending"
+    },
+    {
+      "id": "us-public-concern-ai-development-pace",
+      "title": "Encuesta en EE. UU. refleja preocupación por la velocidad del desarrollo de IA",
+      "source": {
+        "name": "AP-NORC",
+        "url": "https://apnorc.org/projects/most-adults-think-ai-is-developing-too-fast/",
+        "published_at": "2026-10-08"
+      },
+      "evidence": "El sondeo encontró que el 64 % de los adultos encuestados cree que la IA avanza demasiado rápido; ocho de cada diez quieren que el Gobierno priorice el control humano y la protección de trabajadores.",
+      "impact": "La preocupación pública puede influir en las políticas y en las expectativas sobre el despliegue responsable de IA.",
+      "action": "En productos de IA, explicar claramente qué tareas realiza el sistema y dónde interviene una persona.",
+      "status": "published"
+    },
+    {
+      "id": "openai-revenue-estimate-revised",
+      "title": "OpenAI comunica a inversores una cifra de ingresos anualizados menor a la reportada anteriormente",
+      "source": {
+        "name": "Axios",
+        "url": "https://www.axios.com/2026/10/08/openai-50-billion-arr-anthropic-revenue-accounting",
+        "published_at": "2026-10-08"
+      },
+      "evidence": "Axios informó que OpenAI comunicó a inversores una cifra cercana a US$50.000 millones, frente a los US$70.000 millones reportados previamente. La diferencia se atribuye a métodos distintos de contabilizar ingresos.",
+      "impact": "La discrepancia puede cambiar cómo inversores y clientes evalúan el crecimiento y la financiación de empresas de IA.",
+      "action": "Tratar las cifras como información reportada por prensa y buscar estados auditados antes de usarlas para decisiones de inversión.",
+      "status": "reported"
+    }
+  ]
+}

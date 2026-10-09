@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-radar.local/contracts/daily-signals.schema.json",
+  "title": "AI Radar Daily Signals",
+  "description": "Daily, source-backed AI news signals for builders.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["date", "product", "signals"],
+  "properties": {
+    "date": { "type": "string", "format": "date" },
+    "product": { "const": "AI Radar" },
+    "signals": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/signal" }
+    }
+  },
+  "$defs": {
+    "signal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "source", "evidence", "impact", "action", "status"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "title": { "type": "string", "minLength": 1 },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["name", "url", "published_at"],
+          "properties": {
+            "name": { "type": "string", "minLength": 1 },
+            "url": { "type": "string", "format": "uri" },
+            "published_at": { "type": "string", "format": "date" }
+          }
+        },
+        "evidence": { "type": "string", "minLength": 1 },
+        "impact": { "type": "string", "minLength": 1 },
+        "action": { "type": "string", "minLength": 1 },
+        "status": {
+          "type": "string",
+          "enum": ["announced", "launched", "in_deployment", "reported", "published", "verification_pending"]
+        }
+      }
+    }
+  }
+}

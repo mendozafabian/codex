@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Radar News"
+  short_description: "Turn recent AI news into daily signals"
+  default_prompt: "Find five recent AI news stories, turn them into source-backed AI Radar signals, and save today's daily JSON."
